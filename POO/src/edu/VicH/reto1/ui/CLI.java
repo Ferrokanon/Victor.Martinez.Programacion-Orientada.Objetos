@@ -7,7 +7,7 @@ public class CLI {
 
     public static void showMenu() {
 
-        Scanner
+        Scanner;
         System.out.println("SELECCIONA LA OPERACIÓN DESEADA:");
         System.out.println("1. Suma:");
         System.out.println("2. Resta:");
