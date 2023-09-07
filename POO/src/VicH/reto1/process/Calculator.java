@@ -1,10 +1,8 @@
-package edu.VicH.reto1.preocess;
-
-import edu.VicH.reto1.ui.CLI;
+package VicH.reto1.process;
 
 /**
  * @Author Victor Marintez
- * Esta calse contiene la logica de los operadores aritmeticos basicos:
+ * Esta clase contiene la logica de los operadores aritmeticos basicos:
  * suma, resta, multiplicacion, division y modulo
  **/
 public class Calculator {
