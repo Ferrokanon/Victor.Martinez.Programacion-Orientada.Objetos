@@ -1,6 +1,6 @@
-package edu.VicH.reto1;
+package VicH.reto2;
 
-import edu.VicH.reto1.ui.CLI;
+import VicH.reto1.ui.CLI;
 
 public class Main {
     public static void main(String[] args) {
