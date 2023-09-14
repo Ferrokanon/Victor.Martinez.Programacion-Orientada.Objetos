@@ -1,13 +1,15 @@
 package edu.VicH.reto1.ui;
 
 import java.util.Random;
+import java.util.Scanner;
 
 public class CLI {
     private static Random scanner;
 
     public static void showMenu() {
 
-        Scanner
+        Scanner scanner = new Scanner(System.in); // Crear un objeto Scanner para entrada del usuario
+
         System.out.println("SELECCIONA LA OPERACIÓN DESEADA:");
         System.out.println("1. Suma:");
         System.out.println("2. Resta:");
