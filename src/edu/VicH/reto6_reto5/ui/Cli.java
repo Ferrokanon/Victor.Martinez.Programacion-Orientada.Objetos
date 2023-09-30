@@ -1,20 +1,21 @@
 package edu.VicH.reto6_reto5.ui;
 
-
 import edu.VicH.reto6_reto5.Process.JuegoAdivinarPalabras;
 import java.util.Scanner; // Agrega esta importación
 import java.util.InputMismatchException; // Agrega esta importación
 
 public class Cli {
 
-    /** @ Autor Victor **/
-    /** Para esta parte del codigo, se toma a consideracion las excepciones relacionadas al menu y nivel, **/
-
-    // Muestra el menú de selección de nivel
+    /**
+     * Este método muestra el menú de selección de nivel.
+     */
     private static void showMenu() {
         System.out.println("Elige un nivel (1: Fácil, 2: Intermedio, 3: Avanzado, 0: Salir):");
     }
 
+    /**
+     * Este método implementa el menú principal del juego.
+     */
     public static void menu() {
         Scanner scanner = new Scanner(System.in);
 
@@ -52,7 +53,7 @@ public class Cli {
                         palabraAdivinada = JuegoAdivinarPalabras.reemplazarLetra(palabraBase, palabraAdivinada, letra);
                         System.out.println("Palabra adivinada: " + palabraAdivinada);
                     } else {
-                        System.out.println("¡INTENTALO DE NUEVO!!!!");
+                        System.out.println("¡INTÉNTALO DE NUEVO!");
                     }
                 } else if (letra != '0') {
                     System.out.println("Por favor, introduce solo letras o 0 para salir.");
@@ -66,6 +67,4 @@ public class Cli {
         }
     }
 }
-
-
 
