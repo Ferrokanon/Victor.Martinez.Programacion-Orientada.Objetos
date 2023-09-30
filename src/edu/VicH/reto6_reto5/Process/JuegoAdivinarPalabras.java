@@ -45,3 +45,6 @@ public class JuegoAdivinarPalabras {
         return nuevaPalabra.toString(); // Devuelve la nueva palabra adivinada
     }
 }
+
+
+
