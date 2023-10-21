@@ -1,5 +1,12 @@
 package edu.VicH.reto9.process;
+// Importación de la clase Random de la librería java.util
+import java.util.Random;
+// Definición de la clase Ayudante
 
+/**
+ * @Autor: Víctor Martínez
+ * Este código cominza a hacer uso de la sentencia "Override" apartir de herencias.
+ */
 import java.util.Random;
 
 public class Ayudante {
@@ -60,4 +67,3 @@ public class Ayudante {
         }
     }
 }
-
