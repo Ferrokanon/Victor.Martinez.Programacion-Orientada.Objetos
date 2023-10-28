@@ -1,15 +1,7 @@
 package edu.VicH.reto10;
 
+import edu.VicH.reto10.process.*;
 import edu.VicH.reto10.ui.Cli;
-import edu.VicH.reto10.process.OperacionAritmetica;
-import edu.VicH.reto10.process.Suma;
-import edu.VicH.reto10.process.Resta;
-import edu.VicH.reto10.process.Multiplicacion;
-import edu.VicH.reto10.process.Division;
-import edu.VicH.reto10.process.Modulo;
-import edu.VicH.reto10.process.Raiz;
-import edu.VicH.reto10.process.Exponente;
-import edu.VicH.reto10.process.Logaritmo;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,34 +17,38 @@ public class Main {
             double[] operandos = Cli.obtenerOperandos();
             OperacionAritmetica operacion = null;
 
-            switch (opcion) {
-                case 1:
-                    operacion = new Suma();
-                    break;
-                case 2:
-                    operacion = new Resta();
-                    break;
-                case 3:
-                    operacion = new Multiplicacion();
-                    break;
-                case 4:
-                    operacion = new Division();
-                    break;
-                case 5:
-                    operacion = new Modulo();
-                    break;
-                case 6:
-                    operacion = new Raiz();
-                    break;
-                case 7:
-                    operacion = new Exponente();
-                    break;
-                case 8:
-                    operacion = new Logaritmo();
-                    break;
-                default:
-                    System.out.println("Opción no válida.");
-                    break;
+            if (opcion == 6) {
+                System.out.print("Ingresa el valor de n para la raíz n-ésima: ");
+                int n = Integer.parseInt(System.console().readLine());
+                operacion = new RaizEnesima(n); // Debes tener la clase RaizEnesima definida.
+            } else {
+                switch (opcion) {
+                    case 1:
+                        operacion = new Suma();
+                        break;
+                    case 2:
+                        operacion = new Resta();
+                        break;
+                    case 3:
+                        operacion = new Multiplicacion();
+                        break;
+                    case 4:
+                        operacion = new Division();
+                        break;
+                    case 5:
+                        operacion = new Modulo();
+                        break;
+                    case 7:
+                        operacion = new Exponente(2); // Debes proporcionar el valor para el exponente.
+                        break;
+                    case 8:
+                        int base = 10; // Add a base for the logarithm
+                        operacion = new Logaritmo(base); // Debes tener la clase Logaritmo definida.
+                        break;
+                    default:
+                        System.out.println("Opción no válida.");
+                        break;
+                }
             }
 
             if (operacion != null) {
@@ -62,4 +58,3 @@ public class Main {
         }
     }
 }
-

@@ -10,7 +10,7 @@ public class Cli {
         System.out.println("3. Multiplicación");
         System.out.println("4. División");
         System.out.println("5. Módulo");
-        System.out.println("6. Raíz Cuadrada");
+        System.out.println("6. RaizEnesima");
         System.out.println("7. Exponente");
         System.out.println("8. Logaritmo");
         System.out.println("9. Salir del programa");

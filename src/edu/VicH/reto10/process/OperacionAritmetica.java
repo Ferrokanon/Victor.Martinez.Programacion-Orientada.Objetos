@@ -4,7 +4,11 @@ package edu.VicH.reto10.process;
  * @Autor: Victor Hugo Martinez Esparza
  * Clase que representa una operación aritmética básica.
  */
-public class OperacionAritmetica {
+
+/**
+ * Clase abstracta que representa una operación aritmética genérica.
+ */
+public abstract class OperacionAritmetica {
     /**
      * Método para realizar una operación aritmética entre dos números.
      *
@@ -12,8 +16,7 @@ public class OperacionAritmetica {
      * @param num2 Segundo número
      * @return Resultado de la operación aritmética
      */
-    public double calcular(double num1, double num2) {
-        // Por defecto, el método devuelve 0, pero puedes sobrescribirlo en las clases derivadas.
-        return 0;
-    }
+    public abstract double calcular(double num1, double num2);
 }
+
+
