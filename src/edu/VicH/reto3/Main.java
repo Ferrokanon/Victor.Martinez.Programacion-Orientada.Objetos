@@ -1,4 +1,6 @@
-package edu.VicH.reto3.ui;
+package edu.VicH.reto3;
+
+import edu.VicH.reto3.ui.cli;
 
 public class Main {
 

@@ -33,13 +33,14 @@ public class ConversionDeUnidades {
         System.out.println("¡Programa de Conversión de Unidades finalizado!");
     }
 
-    public static void mostrarMenu() {
+    public static int mostrarMenu() {
         System.out.println("a. Convertir de Decimal a Binario");
         System.out.println("b. Convertir de Decimal a Octal");
         System.out.println("c. Convertir de Decimal a Hexadecimal");
         System.out.println("d. Convertir de Binario a Decimal");
         System.out.println("e. Convertir de Octal a Decimal");
         System.out.println("f. Convertir de Hexadecimal a Decimal");
+        return 0;
     }
 
     public static String realizarConversion(int numero, char opcion) {
@@ -77,6 +78,22 @@ public class ConversionDeUnidades {
             return Integer.toString(numero, 16);
         }
         return "";
+    }
+
+    public int obtenerIndiceRaiz(Scanner scanner) {
+        return 0;
+    }
+
+    public int obtenerIndiceExponente(Scanner scanner) {
+        return 0;
+    }
+
+    public double obtenerBaseLogaritmo(Scanner scanner) {
+        return 0;
+    }
+
+    public double[] obtenerOperandos(Scanner scanner) {
+        return new double[0];
     }
 }
 

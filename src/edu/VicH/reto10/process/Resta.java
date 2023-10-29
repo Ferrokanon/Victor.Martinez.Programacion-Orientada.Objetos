@@ -5,7 +5,7 @@ package edu.VicH.reto10.process;
  */
 
 
-public class Resta extends OperacionAritmetica {
+public class Resta extends OperacionAritmeticaBase {
     @Override
     public double calcular(double num1, double num2) {
         return num1 - num2;
