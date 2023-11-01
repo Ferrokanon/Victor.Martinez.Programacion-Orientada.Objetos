@@ -9,11 +9,16 @@ package edu.VicH.reto10_5.process;
 
 
 
-public class Logaritmo extends RaizEnesima {
-    @Override
-    public double calcular(double argumento, double base) {
-        return super.calcular(argumento, 1.0 / base);
+public abstract class Logaritmo extends RaizEnesima implements OperacionLogaritmo {
+    public Logaritmo(int indice) {
+        super();
+    }
+
+    public Logaritmo(double baseLogaritmo) {
+        super();
+    }
+
+    public Logaritmo() {
+
     }
 }
-
-

@@ -7,14 +7,22 @@ package edu.VicH.reto10_5.process;
  * tomando en cuenta la división por cero.
  */
 
+
 public class Division extends Resta {
     @Override
     public double calcular(double a, double b) {
         if (b != 0) {
-            return super.calcular(a, b);
+            double resultado = 0.0;
+
+            while (a >= b) {
+                a = super.calcular(a, b);
+                resultado++;
+            }
+
+            return resultado;
         } else {
             System.out.println("No se puede dividir por cero.");
-            return Double.NaN; // Valor especial para indicar error
+            return Double.NaN;
         }
     }
 }

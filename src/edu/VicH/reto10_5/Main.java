@@ -1,5 +1,6 @@
 package edu.VicH.reto10_5;
 
+
 import edu.VicH.reto10_5.ui.Cli;
 
 /**
@@ -9,6 +10,8 @@ import edu.VicH.reto10_5.ui.Cli;
  */
 public class Main {
     public static void main(String[] args) {
+
         Cli.run(); // Llama al método run de la clase Cli
     }
 }
+

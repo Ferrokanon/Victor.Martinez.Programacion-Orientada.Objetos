@@ -7,14 +7,18 @@ package edu.VicH.reto10_5.ui;
  *         Es un programa interactivo que utiliza las clases anteriores para realizar operaciones aritméticas.
  */
 
-        import edu.VicH.reto10_5.process.*;
 
-        import java.util.Scanner;
+import edu.VicH.reto10_5.process.*;
+
+import java.util.Scanner;
 
 public class Cli {
     public static void run() {
         Scanner scanner = new Scanner(System.in);
         int opcion;
+
+        double num1;
+        double num2;
 
         do {
             System.out.println("Seleccione una operación:");
@@ -35,9 +39,9 @@ public class Cli {
                 case 1:
                     Suma suma = new Suma();
                     System.out.print("Ingrese primer número: ");
-                    double num1 = scanner.nextDouble();
+                    num1 = scanner.nextDouble();
                     System.out.print("Ingrese segundo número: ");
-                    double num2 = scanner.nextDouble();
+                    num2 = scanner.nextDouble();
                     double resultadoSuma = suma.calcular(num1, num2);
                     System.out.println("El resultado de la suma es: " + resultadoSuma);
                     break;
@@ -96,21 +100,31 @@ public class Cli {
                     num1 = scanner.nextDouble();
                     System.out.print("Ingrese el exponente: ");
                     num2 = scanner.nextDouble();
-                    double resultadoPotenciaMultiplicacion = ((Potencia_Multiplicacion) potenciaMultiplicacion).calcular(num1, num2);
+                    double resultadoPotenciaMultiplicacion = potenciaMultiplicacion.calcular(num1, num2);
                     System.out.println("El resultado de " + num1 + " elevado a la potencia " + num2 + " es: " + resultadoPotenciaMultiplicacion);
                     break;
                 case 8:
-                    Potencia_RaízEnésima potenciaRaiz = new Potencia_RaízEnésima();
+                    Potencia_RaizEnesima potenciaRaiz = new Potencia_RaizEnesima();
                     System.out.print("Ingrese la base: ");
                     num1 = scanner.nextDouble();
                     System.out.print("Ingrese el exponente: ");
                     num2 = scanner.nextDouble();
-                    double resultadoPotenciaRaiz = ((Potencia_RaízEnésima) potenciaRaiz).calcular(num1, num2);
+                    double resultadoPotenciaRaiz = potenciaRaiz.calcular(num1, num2);
                     System.out.println("El resultado de " + num1 + " elevado a la potencia " + num2 + " es: " + resultadoPotenciaRaiz);
                     break;
                 case 9:
-                    Logaritmo logaritmo = new Logaritmo();
-                    System.out.print("Ingrese el argumento (antilogaritmo): ");
+                    Logaritmo logaritmo = new Logaritmo() {
+                        /**
+                         * @param base
+                         * @param numero
+                         * @return
+                         */
+                        @Override
+                        public double calcularLogaritmo(double base, double numero) {
+                            return 0;
+                        }
+                    };
+                    System.out.print("Ingrese el argumento: ");
                     num1 = scanner.nextDouble();
                     System.out.print("Ingrese la base del logaritmo: ");
                     num2 = scanner.nextDouble();

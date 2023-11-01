@@ -103,7 +103,7 @@ public class Cli {
         }
     }
 
-    private static void mostrarMenu() {
+    public static int mostrarMenu() {
         System.out.println("Elija una operación:");
         System.out.println("1. Suma");
         System.out.println("2. Resta");
@@ -115,9 +115,10 @@ public class Cli {
         System.out.println("8. Logaritmo");
         System.out.println("9. Salir del programa");
         System.out.print("Opción: ");
+        return 0;
     }
 
-    private static double[] obtenerOperandos(Scanner scanner) {
+    public static double[] obtenerOperandos(Scanner scanner) {
         double[] operandos = new double[2];
         System.out.print("Ingresa el primer número: ");
         operandos[0] = scanner.nextDouble();
@@ -126,17 +127,17 @@ public class Cli {
         return operandos;
     }
 
-    private static int obtenerIndiceRaiz(Scanner scanner) {
+    public static int obtenerIndiceRaiz(Scanner scanner) {
         System.out.print("Ingresa el índice para la raíz: ");
         return scanner.nextInt();
     }
 
-    private static int obtenerIndiceExponente(Scanner scanner) {
+    public static int obtenerIndiceExponente(Scanner scanner) {
         System.out.print("Ingresa el índice para el exponente: ");
         return scanner.nextInt();
     }
 
-    private static double obtenerBaseLogaritmo(Scanner scanner) {
+    public static double obtenerBaseLogaritmo(Scanner scanner) {
         System.out.print("Ingresa la base del logaritmo: ");
         return scanner.nextDouble();
     }
