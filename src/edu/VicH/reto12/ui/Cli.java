@@ -1,23 +1,13 @@
-package edu.VicH.reto11.ui;
 
-import edu.VicH.reto11.process.*;
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Scanner;
+package edu.VicH.reto12.ui;
 
 
-/**
- * Este código representa una aplicación de línea de comandos (CLI), a diferencia del creado en el reto anterior,
- * este nuevo CLi permite desarrollar una nueva interfaz en la eleccion de 4 idiomas diferentes, asi mismo, dentro del
- * mismo paquete UI , se añade una libreria de clases que permite guardar un record de traducciones automaticas para ser
- * ejecutadas directamente sin la necesidad de escribir manualmente la traduccion.
- *
- * Ahora
- *
- * la segunda parte del Cli,que permite al usuario seleccionar una operación aritmética y realizar cálculos.
- * Tambien arroja las intrucciones al usuario asi como el resultado de la operacion de manera traducida segun haya sido la eleccion del idioma previamente
- * Es un programa interactivo que utiliza las clases anteriores para realizar operaciones aritméticas.
- */
+        import edu.VicH.reto12.process.*;
+
+        import java.io.File;
+        import java.io.FileOutputStream;
+        import java.io.PrintStream;
+        import java.util.Scanner;
 
 public class Cli {
     private static Cli instance;
@@ -145,7 +135,7 @@ public class Cli {
         } while (option != 0);
     }
 
-    private void performMathOperation(@NotNull OperacionAritmetica operation, @NotNull Language language, String operationKey, String resultKey, String num1Key, String num2Key) {
+    private void performMathOperation(OperacionAritmetica operation, Language language, String operationKey, String resultKey, String num1Key, String num2Key) {
         System.out.print(language.getTranslation(num1Key, language.getId()));
         double num1 = scanner.nextDouble();
         System.out.print(language.getTranslation(num2Key, language.getId()));
@@ -157,6 +147,28 @@ public class Cli {
         String resultMessage = language.getTranslation(resultKey, language.getId());
 
         System.out.println(resultMessage + " " + operationName + " " + result);
+
+        // Redirigir la salida de la consola a un archivo
+        redirectConsoleOutput(resultMessage + " " + operationName + " " + result);
+
+        // Leer el contenido del archivo de salida y almacenarlo en el objeto Resultado
+        Resultado resultado = new Resultado();
+        resultado.leerContenidoArchivo();
+        resultado.guardarResultado();
+    }
+
+    private void redirectConsoleOutput(String output) {
+        File resultadosFolder = new File("RESULTADOS");
+        if (!resultadosFolder.exists()) {
+            resultadosFolder.mkdir();
+        }
+
+        try (PrintStream ps = new PrintStream(new FileOutputStream("RESULTADOS/ConsoleOutput.txt", true))) {
+            System.setOut(ps);
+            System.out.println(output);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public static void main(String[] args) {
@@ -164,4 +176,3 @@ public class Cli {
         cli.run();
     }
 }
-

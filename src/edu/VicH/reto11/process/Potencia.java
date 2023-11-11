@@ -9,7 +9,7 @@ package edu.VicH.reto11.process;
  */
 
 
-public class Potencia_Multiplicacion extends Multiplicacion {
+public class Potencia extends Multiplicacion {
     @Override
     public double calcular(double a, double b) {
         // Calcula la potencia aplicando la propiedad de la multiplicación
