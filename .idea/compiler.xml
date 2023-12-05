@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <file url="file://$PROJECT_DIR$/src/edu/VicH/RetoFinal/process/TICTACTOE11.java" />
+      <file url="file://$PROJECT_DIR$/src/edu/VicH/PruebaRetF2/process/Scoreboard.java" />
+    </excludeFromCompile>
+  </component>
+</project>

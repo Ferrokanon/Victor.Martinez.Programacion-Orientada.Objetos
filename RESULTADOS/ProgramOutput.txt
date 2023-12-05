@@ -1,0 +1,138 @@
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+結果： べき乗 27.0
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+結果： べき乗 27.0
+Ergebnis:  Logarithmus 2.333333333333335
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+結果： べき乗 27.0
+Ergebnis:  Logarithmus 2.333333333333335
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+結果： べき乗 27.0
+Ergebnis:  Logarithmus 2.333333333333335
+結果： 対数 1.2500000000000013
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+結果： べき乗 27.0
+Ergebnis:  Logarithmus 2.333333333333335
+結果： 対数 1.2500000000000013
+結果： N番目の平方根 2.666666666666665
+
+Resultado:  Multiplicación 6.0
+Result:  Subtraction 2.0
+Resultado:  Multiplicación 8.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Multiplicación 6.0
+Result:  Multiplication 6.0
+Resultado:  Módulo (Residuo) 1.0
+結果： べき乗 27.0
+Ergebnis:  Logarithmus 2.333333333333335
+結果： 対数 1.2500000000000013
+結果： N番目の平方根 2.666666666666665
+
