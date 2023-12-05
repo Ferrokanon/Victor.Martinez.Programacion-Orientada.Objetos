@@ -1,10 +1,7 @@
 package edu.VicH.RetoFinal.ui;
 
-
-
 import java.util.HashMap;
 import java.util.Map;
-
 public class EnglishLanguage {
     private static final Map<String, String> translations = new HashMap<>();
 
